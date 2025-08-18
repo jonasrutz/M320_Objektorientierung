@@ -4,10 +4,16 @@
     {
         static void Main(string[] args)
         {
-            int a = 16;
             Console.WriteLine("Hello, World!");
-            Console.WriteLine("My name is Jonas");
-            Console.WriteLine($"I'm {a} years old");
+
+            int a = 16;
+            int b = 3;
+
+            int summe = MyMath.add(a, b);
+            Console.WriteLine($"Summe von {a} und {b} = {summe}");
+
+            int differenz = MyMath.subtract(a, b);
+            Console.WriteLine($"Differenz von {a} und {b} = {differenz}");
         }
     }
 }
