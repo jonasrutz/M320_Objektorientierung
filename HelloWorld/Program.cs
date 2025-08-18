@@ -4,16 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
 
-            int a = 16;
-            int b = 3;
+            int a = 12;
+            int b = 16;
 
-            int summe = MyMath.add(a, b);
-            Console.WriteLine($"Summe von {a} und {b} = {summe}");
 
-            int differenz = MyMath.subtract(a, b);
-            Console.WriteLine($"Differenz von {a} und {b} = {differenz}");
+            int ggt = MyMath.Calc_ggT(a, b);
+            Console.WriteLine(ggt);
+            int kgv = MyMath.Calc_kgv(a, b);
+            Console.WriteLine(kgv);
         }
     }
 }
