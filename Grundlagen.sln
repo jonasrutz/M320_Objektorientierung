@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.36105.23 d17.13
+VisualStudioVersion = 17.13.36105.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ggt_kgv_rechner", "HelloWorld\ggt_kgv_rechner.csproj", "{650FBA61-F92C-4D52-953D-B6D2C2C6FA1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "number_guessing_game", "number_guessing_game\number_guessing_game.csproj", "{7E3A1CDC-F79E-43DB-ABD7-70ABA40CF8AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{650FBA61-F92C-4D52-953D-B6D2C2C6FA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{650FBA61-F92C-4D52-953D-B6D2C2C6FA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{650FBA61-F92C-4D52-953D-B6D2C2C6FA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3A1CDC-F79E-43DB-ABD7-70ABA40CF8AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3A1CDC-F79E-43DB-ABD7-70ABA40CF8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3A1CDC-F79E-43DB-ABD7-70ABA40CF8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3A1CDC-F79E-43DB-ABD7-70ABA40CF8AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
