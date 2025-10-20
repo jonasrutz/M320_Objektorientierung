@@ -8,16 +8,23 @@ namespace wk05_a1_lidl
 {
     internal class Kind : Person
     {
-        public int alter { get; set; }
+        public int Alter { get; set; }
 
-        public override void trarge()
+        public Kind(string vorname, string name, int identNr, string key, int alter) : base(vorname, name, identNr, key)
         {
-            Console.WriteLine($"{vorname} trägt seine Jacke.");
+            Alter = alter;
         }
 
-        public override void esse()
+        public override void Esse()
         {
-            Console.WriteLine($"{vorname} isst mit den Händen.");
+            base.Esse();
+            Console.WriteLine("   ... Nein, als Kleinkind {0} {1} {2} mit Alter {3} natürlich von Hand...", Vorname, Name, IdentNr, Alter);
+        }
+
+        public override void Trage()
+        {
+            Console.WriteLine("Ich als Kleinkind {0} {1} {2} trage gar nichts", Vorname, Name, IdentNr);
+
         }
     }
 }

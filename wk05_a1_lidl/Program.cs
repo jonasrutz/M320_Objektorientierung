@@ -4,24 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Kunde kunde1 = new Kunde() { vorname = "Lars", name = "Hellstern", umsatz = 21345.34 };
+            Console.WriteLine("Hello, World!");
+            //Person person1 = new Person("Hans", "Meier");
+            Kunde kunde1 = new Kunde("Fritz", "Mueller", 100, "KEY100", 1000.0);
+            Lagerist lagerist1 = new Lagerist("Joe", "Manser", 101, "KEY101", 180);
+            Kind kleinkind1 = new Kind("Kiddy", "Kid", 102, "KEY102", 3);
 
-            Lagerist lagerist1 = new Lagerist() { vorname = "Stefan", name = "Paulus", groesse = 182, };
-
-            Kind kind1 = new Kind() { vorname = "Adriana", name = "Rutz", alter = 12 };
-
-
-
-            kunde1.esse();
-            kunde1.kaufen();
-            kunde1.trarge();
-            lagerist1.esse();
-            lagerist1.lager();
-            lagerist1.trarge();
-            kind1.esse();
-            kind1.trarge();
-
-
+            //person1.Esse();
+            kunde1.Esse();
+            kunde1.Kaufe();
+            kunde1.Trage();
+            lagerist1.Esse();
+            lagerist1.LagereEin();
+            lagerist1.Trage();
+            kleinkind1.Esse();
+            kleinkind1.Trage();
         }
     }
 }

@@ -8,14 +8,24 @@ namespace wk05_a1_lidl
 {
     internal abstract class Person
     {
-        public string name { get; set; }
-        public string vorname { get; set; }
+        public string Name { get; set; }
+        public string Vorname { get; set; }
+        protected int IdentNr { get; private set; }
+        private string Key { get; set; }
 
-        public virtual void esse()
+        public Person(string name, string vorname, int identNr, string key)
         {
-            Console.WriteLine($"{vorname} {name} isst mit Messer und Gabel.");
+            Name = name;
+            Vorname = vorname;
+            IdentNr = identNr;
+            Key = key;
         }
 
-        public abstract void trarge();
+        public virtual void Esse()
+        {
+            System.Console.WriteLine("Ich als Person {0} {1} {2} esse mit Messer und Gabel", Vorname, Name, IdentNr);
+        }
+
+        public abstract void Trage();
     }
 }

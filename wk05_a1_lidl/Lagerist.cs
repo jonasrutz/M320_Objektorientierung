@@ -8,16 +8,21 @@ namespace wk05_a1_lidl
 {
     internal class Lagerist : Person
     {
-        public int groesse { get; set; }
+        public int Groesse { get; set; }
 
-        public void lager()
+        public Lagerist(string vorname, string name, int identNr, string key, int groesse) : base(vorname, name, identNr, key)
         {
-            Console.WriteLine($"{vorname} lagert etwas ein.");
+            Groesse = groesse;
         }
 
-        public override void trarge()
+        public void LagereEin()
         {
-            Console.WriteLine($"{vorname} trägt die Paletten.");
+            Console.WriteLine("Ich als Lagerist {0} {1} {2} lagere ein", Vorname, Name, IdentNr);
+        }
+
+        public override void Trage()
+        {
+            Console.WriteLine("Ich als Lagerist {0} {1} {2} trage mit dem Stapler", Vorname, Name, IdentNr);
         }
     }
 }
