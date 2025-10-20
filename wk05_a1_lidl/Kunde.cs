@@ -8,16 +8,16 @@ namespace wk05_a1_lidl
 {
     internal class Kunde : Person
     {
-        public double umsatz;
+        public double umsatz { get; set; }
 
         public void kaufen()
         {
-            Console.WriteLine("Ich kaufe etwas");
+            Console.WriteLine($"{vorname} kauft etwas.");
         }
 
-        public override void trargen()
+        public override void trarge()
         {
-            Console.WriteLine("Trage die Einkaufstaschen");
+            Console.WriteLine($"{vorname} trägt die Einkaufstaschen.");
         }
     }
 }

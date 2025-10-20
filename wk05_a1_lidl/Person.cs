@@ -8,14 +8,14 @@ namespace wk05_a1_lidl
 {
     internal abstract class Person
     {
-        public string name;
-        public string vorname;
+        public string name { get; set; }
+        public string vorname { get; set; }
 
-        public void essen()
+        public virtual void esse()
         {
-            Console.WriteLine($"{vorname} {name} isst!");
+            Console.WriteLine($"{vorname} {name} isst mit Messer und Gabel.");
         }
 
-        public abstract void trargen();
+        public abstract void trarge();
     }
 }
