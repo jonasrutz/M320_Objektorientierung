@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace wk05_a1_lidl
 {
-    internal abstract class Person
+    internal abstract class Person : IPublish
     {
         public string Name { get; set; }
         public string Vorname { get; set; }
@@ -27,5 +27,12 @@ namespace wk05_a1_lidl
         }
 
         public abstract void Trage();
+
+        public void Publiziere(string text)
+        {
+            Console.WriteLine($"{text}");
+        }
+
+        public Person(){}
     }
 }

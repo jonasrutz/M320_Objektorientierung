@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace wk05_a1_lidl
 {
-    internal class Kunde : Person
+    internal class Kunde : MuendigePerson
     {
         public double Umsatz { get; set; }
 
@@ -25,11 +25,6 @@ namespace wk05_a1_lidl
             Console.WriteLine("Ich als Kunde {0} {1} {2} trage mit dem Einkaufswagen", Vorname, Name, IdentNr);
         }
 
-        public void TestKey()
-        {
-            Console.WriteLine(this.Umsatz);   //ist public
-            Console.WriteLine(this.IdentNr);  //ist protected
-            Console.WriteLine(this.Key);      //ist private
-        }
+
     }
 }

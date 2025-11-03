@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace wk05_a1_lidl
 {
-    internal class Lagerist : Person
+    internal class Lagerist : MuendigePerson
     {
         public int Groesse { get; set; }
 

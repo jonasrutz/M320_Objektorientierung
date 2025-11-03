@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace wk05_a1_lidl
 {
-    internal class Kind : Person
+    internal class Kind : Person, IPublish
     {
         public int Alter { get; set; }
 
@@ -26,5 +26,7 @@ namespace wk05_a1_lidl
             Console.WriteLine("Ich als Kleinkind {0} {1} {2} trage gar nichts", Vorname, Name, IdentNr);
 
         }
+
+        
     }
 }
